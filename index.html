@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pulse News</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav">
+        <h1>Pulse News</h1>
+        <button id="theme-toggle" aria-label="Toggle color theme">🌙</button>
+      </nav>
+      <div class="hero-content">
+        <p class="eyebrow">Stay informed in 2 minutes</p>
+        <h2>Your daily brief, beautifully organized.</h2>
+        <p>
+          Pulse News surfaces the stories that matter most with concise summaries,
+          trusted sources, and personalized topics.
+        </p>
+        <a class="cta" href="#stories">Explore Top Stories</a>
+      </div>
+    </header>
+
+    <main>
+      <section id="stories" class="cards">
+        <article>
+          <h3>Global Markets</h3>
+          <p>Equities rally as inflation cools and central banks hint at rate cuts.</p>
+          <a href="#">Read summary →</a>
+        </article>
+        <article>
+          <h3>Tech & AI</h3>
+          <p>Open-source agents are transforming how small teams build software.</p>
+          <a href="#">Read summary →</a>
+        </article>
+        <article>
+          <h3>Climate</h3>
+          <p>New battery materials may reduce storage costs by up to 35%.</p>
+          <a href="#">Read summary →</a>
+        </article>
+      </section>
+
+      <section class="newsletter">
+        <h3>Get the morning brief</h3>
+        <p>Free weekday digest. No spam, unsubscribe anytime.</p>
+        <form>
+          <label for="email" class="sr-only">Email</label>
+          <input id="email" type="email" placeholder="you@example.com" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Pulse News</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
